@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         v.cornersRadius = CXGRoundedCornersRadius(topLeft: 10, topRight: 60, bottomLeft: 50, bottomRight: 20)
         v.borderColors = [.blue, .red, .brown, .cyan, .brown]
         v.borderWidth = 5
+        v.paddingColor = UIColor.cyan.withAlphaComponent(0.8)
+        v.paddingWidth = 10
         self.view.addSubview(v)
     }
 

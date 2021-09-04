@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B8B04C226D5DCE9006B7BB9 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B04C026D5DCE9006B7BB9 /* JSON.swift */; };
+		4B8B04C326D5DCE9006B7BB9 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B04C126D5DCE9006B7BB9 /* Default.swift */; };
 		4B8FDE8E26D4D52100CD3A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FDE8D26D4D52100CD3A7D /* AppDelegate.swift */; };
 		4B8FDE9026D4D52100CD3A7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FDE8F26D4D52100CD3A7D /* SceneDelegate.swift */; };
 		4B8FDE9226D4D52100CD3A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FDE9126D4D52100CD3A7D /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 		4B8FDEA526D4D52300CD3A7D /* CXGToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FDEA426D4D52300CD3A7D /* CXGToolsTests.swift */; };
 		4B8FDEB026D4D52300CD3A7D /* CXGToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FDEAF26D4D52300CD3A7D /* CXGToolsUITests.swift */; };
 		4B8FDEBF26D4D5D000CD3A7D /* CXGRoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FDEBE26D4D5D000CD3A7D /* CXGRoundedCornersView.swift */; };
+		4BC431B326E1D3CD003372CD /* CXGFilePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC431B226E1D3CD003372CD /* CXGFilePreviewViewController.swift */; };
+		4BC431B626E1D3EC003372CD /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC431B526E1D3EC003372CD /* QuickLook.framework */; };
+		4BC431B826E1D548003372CD /* 4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4BC431B726E1D548003372CD /* 4.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B8B04C026D5DCE9006B7BB9 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		4B8B04C126D5DCE9006B7BB9 /* Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
 		4B8FDE8A26D4D52100CD3A7D /* CXGTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXGTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8FDE8D26D4D52100CD3A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B8FDE8F26D4D52100CD3A7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,9 @@
 		4B8FDEAF26D4D52300CD3A7D /* CXGToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXGToolsUITests.swift; sourceTree = "<group>"; };
 		4B8FDEB126D4D52300CD3A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8FDEBE26D4D5D000CD3A7D /* CXGRoundedCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXGRoundedCornersView.swift; sourceTree = "<group>"; };
+		4BC431B226E1D3CD003372CD /* CXGFilePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXGFilePreviewViewController.swift; sourceTree = "<group>"; };
+		4BC431B526E1D3EC003372CD /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		4BC431B726E1D548003372CD /* 4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 4.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC431B626E1D3EC003372CD /* QuickLook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B8B04BF26D5DCDA006B7BB9 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				4B8B04C126D5DCE9006B7BB9 /* Default.swift */,
+				4B8B04C026D5DCE9006B7BB9 /* JSON.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
 		4B8FDE8126D4D52100CD3A7D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,7 @@
 				4B8FDEA326D4D52300CD3A7D /* CXGToolsTests */,
 				4B8FDEAE26D4D52300CD3A7D /* CXGToolsUITests */,
 				4B8FDE8B26D4D52100CD3A7D /* Products */,
+				4BC431B426E1D3EC003372CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +122,9 @@
 		4B8FDE8C26D4D52100CD3A7D /* CXGTools */ = {
 			isa = PBXGroup;
 			children = (
+				4BC431B726E1D548003372CD /* 4.pdf */,
+				4BC431B126E1D392003372CD /* FilePreview */,
+				4B8B04BF26D5DCDA006B7BB9 /* Codable */,
 				4B8FDEBD26D4D57800CD3A7D /* View */,
 				4B8FDE8D26D4D52100CD3A7D /* AppDelegate.swift */,
 				4B8FDE8F26D4D52100CD3A7D /* SceneDelegate.swift */,
@@ -137,6 +161,22 @@
 				4B8FDEBE26D4D5D000CD3A7D /* CXGRoundedCornersView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4BC431B126E1D392003372CD /* FilePreview */ = {
+			isa = PBXGroup;
+			children = (
+				4BC431B226E1D3CD003372CD /* CXGFilePreviewViewController.swift */,
+			);
+			path = FilePreview;
+			sourceTree = "<group>";
+		};
+		4BC431B426E1D3EC003372CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BC431B526E1D3EC003372CD /* QuickLook.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +241,7 @@
 		4B8FDE8226D4D52100CD3A7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CXG;
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
@@ -243,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8FDE9A26D4D52300CD3A7D /* LaunchScreen.storyboard in Resources */,
+				4BC431B826E1D548003372CD /* 4.pdf in Resources */,
 				4B8FDE9726D4D52300CD3A7D /* Assets.xcassets in Resources */,
 				4B8FDE9526D4D52100CD3A7D /* Main.storyboard in Resources */,
 			);
@@ -270,6 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8FDEBF26D4D5D000CD3A7D /* CXGRoundedCornersView.swift in Sources */,
+				4B8B04C326D5DCE9006B7BB9 /* Default.swift in Sources */,
+				4B8B04C226D5DCE9006B7BB9 /* JSON.swift in Sources */,
+				4BC431B326E1D3CD003372CD /* CXGFilePreviewViewController.swift in Sources */,
 				4B8FDE9226D4D52100CD3A7D /* ViewController.swift in Sources */,
 				4B8FDE8E26D4D52100CD3A7D /* AppDelegate.swift in Sources */,
 				4B8FDE9026D4D52100CD3A7D /* SceneDelegate.swift in Sources */,
@@ -451,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FKX4NKH59R;
 				INFOPLIST_FILE = CXGTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FKX4NKH59R;
 				INFOPLIST_FILE = CXGTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
